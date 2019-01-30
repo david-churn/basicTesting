@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<!-- testing document for Eloquent JavaScript examples. -->
+<!-- 1/28/2019  David Churn created -->
+<!-- This is a poor example of coding. -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>testing something</title>
+  </head>
+  <body>
+    <h1>Testing page</h1>
+<!-- Starts here -->
+<textarea>Type something here...</textarea>
+<script>
+  let textarea = document.querySelector("textarea");
+  let timeout;
+  textarea.addEventListener("input", () => {
+    clearTimeout(timeout);
+    timeout = setTimeout(() => console.log("Typed!"), 500);
+  });
+</script>
+<!-- stops here -->
+  </body>
+</html>
